@@ -1,6 +1,7 @@
 package packt.selenium.chap3_9;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -11,6 +12,8 @@ import packt.selenium.chap3_9.pageobjects.Google;
 import packt.selenium.chap3_9.pageobjects.GoogleSearchPage;
 
 import java.util.concurrent.TimeUnit;
+
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by Ripon on 11/19/2015.
@@ -36,5 +39,6 @@ public class SearchGoogleTest {
         googlePage = new Google(driver);
         searchPage = googlePage.goToSearchPage();
         searchPage.getNumberOfResults();
+        Assert.assertTrue(1==2);
     }
 }
