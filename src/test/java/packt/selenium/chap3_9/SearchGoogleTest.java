@@ -39,6 +39,5 @@ public class SearchGoogleTest {
         googlePage = new Google(driver);
         searchPage = googlePage.goToSearchPage();
         searchPage.getNumberOfResults();
-        Assert.assertTrue(1==2);
     }
 }
