@@ -25,7 +25,7 @@ public class SearchGoogleTest {
 
     @Before
     public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\nasir\\Downloads\\chromedriver_win32\\chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","E:\\Eclipse Workspace\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
